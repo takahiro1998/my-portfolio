@@ -1,0 +1,31 @@
+const modal = document.getElementById('project-modal');
+const modalContent = document.getElementById('project-details');
+const closeBtn = document.querySelector('.close');
+
+    // 各プロジェクトの詳細（ここを増やせる）
+const projectData = {
+  1: "<h2>大手メガバンクのHP改修</h2><p>大手メガバンクのホームページ改修のプロジェクトにコーダとして参画しました。主にページ制作を担当しました。</p><h3>参画期間</h3><p>2024.8~2024.12</p><h3>環境</h3><ul><li><span>使用言語</span></span>HTML / CSS / javascript</li><li><span>OS</span>Windows</li><li><span>ドキュメント</span>Excel</li><li><span>プロジェクト管理</span>Backlog , FileZilla</li><li><span>コミュニケーション</span>Slack</li></ul>",
+  2: "<h2>RPGアプリゲームのテスト検証</h2><p>シナリオ型RPGのテスターとして参画<br>複雑に交差するシナリオのため難関な検証作業となりました。</p><h3>参画期間</h3><p>2025.1~2025.5</p><h3>環境</h3><ul><li><span>OS</span></span>Windows / Android / iOS</li><li><span>ドキュメント</span>Confluence</li><li><span>プロジェクト管理</span>JIRA,Redmine,Excel</li><li><span>コミュニケーション</span>Teams</li></ul>",
+    };
+
+    // リンククリックで表示
+    document.querySelectorAll('.project-link').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const projectId = this.getAttribute('data-project');
+        modalContent.innerHTML = projectData[projectId];
+        modal.style.display = 'flex';
+      });
+    });
+
+    // 閉じるボタン
+    closeBtn.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+
+    // 背景クリックでも閉じる
+    window.addEventListener('click', e => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });

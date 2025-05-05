@@ -1,0 +1,491 @@
+body {
+  /* margin: 20px; */
+  max-width: 1080px;
+  font-family: YuGothic, "游ゴシック体", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  letter-spacing: .025em;
+  line-height: 1.8;
+}
+
+section{
+  margin: 0 20px 100px 20px;
+  padding-top: 100px;
+}
+
+h2{
+  display: inline-block;
+  border-bottom: 5px solid #3c6e71;
+}
+
+small{
+  margin-left: 15px;
+  font-size: 17px;
+}
+
+.bg_pattern {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.Polka {
+  background-image: radial-gradient(#aaaf8d 2px, #ffffff 2px);
+  background-size: 20px 20px;
+}
+
+/*=============
+base
+==============*/
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* header */
+header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #aaaf8d;
+  border-radius: 0;
+  border-bottom: 1px solid #aaaf8d;
+}
+
+h1 {
+  margin-left: 20px;
+  color: white;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  padding: 21px ;
+  margin: 0 0 0 20px;
+}
+
+nav ul li{
+  margin: 0 10px;
+  background-color: #333;
+  border-bottom: 5px solid #d62828;
+}
+
+nav ul li a{
+  display: block;
+  padding: 15px 70px;
+  color: white;
+  text-decoration: none;
+}
+
+/* about(自己紹介) */
+.profile-box, .plan-box, .hobby-box, .link-section, .faq-box{
+margin: 0 20px;
+}
+
+.about-box{
+  display: flex;
+  margin: 10px 0;
+}
+
+.about-box img{
+  width: 500px;
+  height: 300px;
+}
+
+.about-box-text{
+  width: 100%;
+  margin: 0 10px ;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.about-box-text ul li{
+  list-style: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease;
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* アニメーション */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-title{
+  width: 200px;
+  text-align: center;
+  padding: 5px 0;
+  color: #fff;
+  background-color: #8ba48d;
+  border: 1px solid #3c6e71;
+}
+
+.project-list{
+  display: flex;
+  flex-direction: column;
+}
+
+.project-list a:before{
+  content: '▶';
+  font-size: 13px;
+  margin-right: 5px;
+}
+
+.project-link {
+  display: inline-block;
+  margin: 5px;
+  color: #0077cc;
+  text-decoration: none;
+}
+
+#project-details ul {
+  padding-inline-start: 0;
+}
+
+#project-details ul li {
+  list-style: none;
+  margin: 5px 0;
+}
+
+#project-details ul li span {
+  background-color: #caf0f8;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  padding: 2px 5px;
+  margin-right: 10px;
+}
+
+/* plan */
+.plan-list{
+  border: 1px solid #edede9;
+  border-radius: 10px;
+  background-color: #edede9;
+  padding: 0 30px;
+  margin: 30px 0;
+}
+
+
+/* hobby(趣味) */
+
+ .swiper-container {
+   width: 1080px;
+   max-width: 1080px;
+   height: 200px;
+   margin: 0 20px;
+   position: relative;
+   overflow: hidden;
+ }
+
+ .swiper-slide {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .swiper-slide img {
+   width: 100%;
+   height: 160px;
+   margin-right: 110px;
+   border-radius: 2px;
+ }
+
+
+ .img-text {
+   margin-top: 8px;
+   font-size: 13px;
+   color: #333;
+   text-align: center;
+ }
+
+
+ .swiper-button-prev,
+ .swiper-button-next {
+   color: #000;
+ }
+
+ .hobby-text b{
+  font-size: 1.7rem;
+  padding-right: 2px;
+ }
+
+ @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+ .hobby-text{
+  display: flex;
+  overflow: hidden;
+ }
+
+ .hobby-text span{
+  /* display: block; */
+  color: #aa8f7b;
+  transform: translate(0, 105%);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+ }
+
+ .hobby-text.-visible span {
+  transform: translate(0, 0);
+}
+
+ .hobby-text span:nth-child(2){
+  transition-delay: 0.06s;
+ }
+
+ .hobby-text span:nth-child(3){
+  transition-delay: 0.12s;
+ }
+
+ /* link */
+ .link-all{
+  display: flex;
+
+ }
+
+ .link-box{
+  position: relative;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  background-color: white;
+  margin: 0 10px;
+  }
+
+  .link-box a{
+    text-decoration: none;
+  }
+
+  .link-box img{
+    opacity: 0.5;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid #000;
+    width: 200px;
+    height: 130px;
+  }
+
+  .img-on-text{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    color: #101010;
+  }
+
+  .link-text{
+    text-align: center;
+    color: #3c6e71;
+    font-size: 0.8rem;
+  }
+
+  /* FAQ */
+
+.accordion_area .accordion_one .ac_header {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 1.5rem 4rem 1.5rem 2rem;
+  position: relative;
+  z-index: +1;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.accordion_area .accordion_one .ac_header:not(.open):hover {
+  background-color: #f1f8ff;
+}
+
+.accordion_area .accordion_one:nth-child(odd) .ac_header {
+  background-color: #f5f5f5;
+}
+
+.accordion_area .accordion_one:nth-child(odd) .ac_header:not(.open):hover {
+  background-color: #f1f8ff;
+}
+
+.accordion_area .accordion_one .ac_header .i_box {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+}
+
+.accordion_area .accordion_one .ac_header .i_box:before,
+.accordion_area .accordion_one .ac_header .i_box:after {
+  position: absolute;
+  content: "";
+  margin: auto;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+.accordion_area .accordion_one .ac_header .i_box:before {
+  border-top: 2px solid #014897;
+  width: 20px;
+  height: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.accordion_area .accordion_one .ac_header .i_box:after {
+  border-left: 2px solid #014897;
+  width: 0;
+  height: 20px;
+  top: 0;
+  bottom: 0;
+  right: 9px;
+  transition: .3s;
+}
+
+.accordion_area .accordion_one .ac_header.open .i_box:after {
+  height: 0;
+}
+
+.accordion_area .accordion_one .ac_inner {
+  display: none;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+@media screen and (max-width: 736px) {
+  .accordion_area .accordion_one .ac_header {
+    padding: 1.5rem 2rem 1.5rem 1.0rem;
+  }
+
+  .accordion_area .accordion_one .ac_header .i_box {
+    right: 0.8rem;
+    width: 15px;
+    height: 15px;
+    margin-top: -7px;
+  }
+
+  .accordion_area .accordion_one .ac_header .i_box:before {
+    width: 15px;
+  }
+
+  .accordion_area .accordion_one .ac_header .i_box:after {
+    height: 15px;
+    right: 7px;
+  }
+
+  .accordion_area .accordion_one .ac_inner {
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  }
+}
+
+.p-faq__headinner {
+  display: block;
+  padding-left: 35px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.p-faq__headinner::before {
+  position: absolute;
+  left: 0;
+  content: "Q．";
+  color: #09357f;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.p-faq__headinner p.p-faq__q-txt {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 736px) {
+  .p-faq__headinner {
+    padding-left: 25px;
+  }
+
+  .p-faq__headinner::before {
+    font-size: 14px;
+  }
+
+  .p-faq__headinner p.p-faq__q-txt {
+    font-size: 14px;
+  }
+}
+
+.p-faq__bodyinner {
+  display: block;
+  padding-left: 35px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.p-faq__bodyinner::before {
+  position: absolute;
+  left: 0;
+  content: "A．";
+  color: #de0000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.p-faq__bodyinner p.p-faq__a-txt {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 736px) {
+  .p-faq__bodyinner {
+    padding-left: 25px;
+  }
+
+  .p-faq__bodyinner::before {
+    font-size: 14px;
+  }
+
+  .p-faq__bodyinner p.p-faq__a-txt {
+    font-size: 14px;
+  }
+}
