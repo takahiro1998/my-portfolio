@@ -422,6 +422,14 @@ margin: 0 20px;
   }
 }
 
+.accordion_one.active .ac_inner {
+  display: block;
+}
+
+.ac-inner{
+  display: none;
+}
+
 .p-faq__headinner {
   display: block;
   padding-left: 35px;
