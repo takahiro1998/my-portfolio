@@ -1,7 +1,6 @@
 body {
   /* margin: 20px; */
   max-width: 1080px;
-  font-family: YuGothic, "游ゴシック体", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   letter-spacing: .025em;
   line-height: 1.8;
 }
@@ -32,14 +31,6 @@ small{
   z-index: -1;
 }
 
-.Polka {
-  background-image: radial-gradient(#aaaf8d 2px, #ffffff 2px);
-  background-size: 20px 20px;
-}
-
-/*=============
-base
-==============*/
 
 html,
 body {
@@ -66,7 +57,9 @@ header {
 }
 
 h1 {
-  margin-left: 20px;
+  font-size: 25px;
+  background-color: #014897;
+  margin: 0 auto;
   color: white;
 }
 
@@ -326,7 +319,7 @@ margin: 0 20px;
 .accordion_area .accordion_one .ac_header {
   background-color: #ffffff;
   border: 1px solid #ccc;
-  padding: 1.5rem 4rem 1.5rem 2rem;
+  padding: 0.5rem 4rem 0.5rem 2rem;
   position: relative;
   z-index: +1;
   cursor: pointer;
@@ -388,12 +381,12 @@ margin: 0 20px;
 
 .accordion_area .accordion_one .ac_inner {
   display: none;
-  padding: 1.5rem 2rem 1.5rem 2rem;
+  padding:0.5rem 4rem 0.5rem 2rem;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
-  background: #fff;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 736px) {
