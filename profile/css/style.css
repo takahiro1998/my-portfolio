@@ -100,13 +100,33 @@ margin: 0 20px;
 
 .about-box-text{
   width: 100%;
-  margin: 0 10px ;
-  padding: 20px;
+  margin: 0 50px ;
   border-radius: 5px;
 }
 
 .about-box-text ul li{
   list-style: none;
+}
+
+.skill-group{
+  display: flex;
+  background-color: #edede9;
+  border-radius: 5px;
+  border: 1px solid #000;
+  margin: 10px;
+  width: 43%;
+}
+
+.skill-group img {
+  width: 50px;
+  height: 50px;
+  margin: 10px 0 0 10px;
+}
+
+.skill-group p{
+  font-size: 0.8rem;
+  margin-left: 20px;
+  width: 55%;
 }
 
 .modal {
@@ -161,11 +181,6 @@ margin: 0 20px;
   border: 1px solid #3c6e71;
 }
 
-.project-list{
-  display: flex;
-  flex-direction: column;
-}
-
 .project-list a:before{
   content: '▶';
   font-size: 13px;
@@ -174,8 +189,13 @@ margin: 0 20px;
 
 .project-link {
   display: inline-block;
-  margin: 5px;
-  color: #0077cc;
+  font-size: 0.8rem;
+  padding: 2px 10px;
+  margin-top: 20px;
+  border: 1px solid #6c757d;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #adb5bd;
   text-decoration: none;
 }
 
