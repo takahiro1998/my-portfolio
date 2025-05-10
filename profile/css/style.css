@@ -324,9 +324,19 @@ margin: 0 20px;
  }
 
  /* link */
+ .attention-text{
+  display: inline-block;
+  width: auto;
+  color: #fff;
+  background-color: #ffb3c1;
+  padding: 1px 10px;
+  font-size: 0.8rem;
+  border-radius: 3px;
+ }
+
  .link-all{
   display: flex;
-
+  flex-wrap: wrap;
  }
 
  .link-box{
@@ -334,7 +344,7 @@ margin: 0 20px;
   border: 1px solid #bbb;
   border-radius: 10px;
   background-color: white;
-  margin: 0 10px;
+  margin: 10px 5px;
   }
 
   .link-box a{
@@ -361,6 +371,28 @@ margin: 0 20px;
     color: #3c6e71;
     font-size: 0.8rem;
   }
+
+    @media screen and (max-width: 736px){
+      .link-all{
+        display: block;
+      }
+      .link-box{
+        position: relative;
+        margin-top: 20px;
+      }
+
+      .link-box img{
+        width: 100%;
+        height: 230px;
+      }
+
+      .img-on-text{
+            position: absolute;
+        top: 50px;
+        left: 180px;
+        font-size: 2.5rem;
+      }
+    }
 
   /* FAQ */
 
