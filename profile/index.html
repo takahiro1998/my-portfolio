@@ -9,18 +9,16 @@
   <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 </head>
 <body>
-  <header>
-    <h1>Sato Takahiro</h1>
-    <nav>
-      <ul>
-        <li><a href="#profile">profile</a></li>
-        <li><a href="#plan">plan</a></li>
-        <li><a href="#hobby">hobby</a></li>
-        <li><a href="#link">link</a></li>
-        <li><a href="#faq">faq</a></li>
+    <header><h1>Sato Takahiro</h1><p>-佐藤 嵩大-</p></header>
+    <nav id="global-nav">
+      <ul class="nav-menu">
+        <li class="nav-link"><a href="#profile" title="ページ内リンクに遷移します">profile</a></li>
+        <li class="nav-link"><a href="#plan" title="ページ内リンクに遷移します">plan</a></li>
+        <li class="nav-link"><a href="#hobby" title="ページ内リンクに遷移します">hobby</a></li>
+        <li class="nav-link"><a href="#link" title="ページ内リンクに遷移します">link</a></li>
+        <li class="nav-link"><a href="#faq" title="ページ内リンクに遷移します">faq</a></li>
       </ul>
     </nav>
-  </header>
   <section>
     <h2 id="profile">Profile<small>-自己紹介-</small></h2>
     <div class="profile-box">
@@ -208,5 +206,19 @@
   <script src="./js/swiper.js"></script>
   <script src="./js/project-select.js"></script>
   <script src="./js/accordion.js"></script>
-</body>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+        var menu = $('#global-nav'),
+          offset = menu.offset();
+        $(window).scroll(function () {
+          if ($(window).scrollTop() > offset.top) {
+            menu.addClass('fixed');
+          } else {
+            menu.removeClass('fixed');
+          }
+        });
+      });
+  </script> -->
+ </body>
 </html>
