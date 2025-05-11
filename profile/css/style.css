@@ -2,21 +2,34 @@
   box-sizing: border-box;
 }
 
+
 html,
 body {
   margin: 0;
   padding: 0;
 }
 
-body {
-  /* margin: 20px; */
-  letter-spacing: .025em;
-  line-height: 1.8;
-}
-
 section{
   margin: 0 20px 100px 20px;
-  padding-top: 100px;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(60deg, rgb(15, 74, 54) 0%, rgba(0, 172, 193, 1) 100%);
+  color: white;
+  text-align: center;
+  height: 25vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 h2{
@@ -40,12 +53,11 @@ small{
   z-index: -1;
 } */
 
-header{
-  text-align: center;
-}
-
-header>h1{
-  font-size: 1.5rem;
+h1{
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 48px;
   line-height: 1.0;
 }
 
@@ -58,13 +70,14 @@ header>p{
 
 
 nav {
-  text-align: center;
+  justify-self: center;
   background-color: #aaaf8d;
   /* display: flex; */
   /* top: 0; */
   /* left: 0; */
   /* z-index: 999; */
 }
+
 /*
 nav.m_fixed {
   left: 0;
@@ -107,8 +120,25 @@ nav.m_fixed {
 
 .nav-link a:hover{
   color: #f18701;
-  background-color: #006ba6;
+  background-color: #3c6e71;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 412px){
+  nav{
+    width: 100%;
+  }
+  .nav-menu{
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  .nav-link{
+    margin: 0;
+    width: 100%;
+    border-radius: 0px;
+    text-align: center;
+  }
 }
 
 /* about(自己紹介) */
@@ -122,8 +152,7 @@ margin: 0 20px;
 }
 
 .about-box img{
-  width: 500px;
-  height: 300px;
+  width: 50%;
 }
 
 .about-box-text{
@@ -136,13 +165,25 @@ margin: 0 20px;
   list-style: none;
 }
 
+@media screen and (max-width: 736px){
+  .about-box{
+    display: block;
+  }
+  .about-box img{
+    width: 100%;
+  }
+  .about-box-text{
+    margin: 0;
+  }
+}
+
 .skill-group{
   display: flex;
   background-color: #edede9;
   border-radius: 5px;
   border: 1px solid #000;
   margin: 10px;
-  width: 43%;
+  width: 35%;
 }
 
 .skill-group img {
@@ -155,6 +196,19 @@ margin: 0 20px;
   font-size: 0.8rem;
   margin-left: 20px;
   width: 55%;
+}
+
+@media screen and (max-width: 736px){
+  .skill-group{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .skill-group{
+    width: 314px;
+    margin: 10px;
+  }
 }
 
 .modal {
@@ -209,23 +263,19 @@ margin: 0 20px;
   border: 1px solid #3c6e71;
 }
 
-.project-list a:before{
-  content: '▶';
-  font-size: 13px;
-  margin-right: 5px;
+.project-list a:hover{
+  background-color: #dcdcd8;
 }
 
 .project-link {
-  display: inline-block;
+  display: flex;
+  width: 100%;
   font-size: 0.8rem;
-  padding: 2px 10px;
-  margin-top: 20px;
-  border: 1px solid #6c757d;
   border-radius: 5px;
-  color: #fff;
-  background-color: #adb5bd;
+  color: #000;
   text-decoration: none;
 }
+
 
 #project-details ul {
   padding-inline-start: 0;
@@ -297,7 +347,6 @@ margin: 0 20px;
   padding-right: 2px;
  }
 
- @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
  .hobby-text{
   display: flex;

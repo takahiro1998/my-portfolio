@@ -29,3 +29,9 @@ const projectData = {
         modal.style.display = 'none';
       }
     });
+
+    document.querySelectorAll('.not-link').forEach(link => {
+      link.addEventListener('click', function (e) {
+        alert('このページは制作中です。');
+      });
+    });

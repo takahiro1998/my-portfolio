@@ -2,14 +2,19 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <title>portfolio</title>
   <link rel="stylesheet" href="./css/style.css">
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 </head>
 <body>
-    <header><h1>Sato Takahiro</h1><p>-佐藤 嵩大-</p></header>
+    <header>
+      <div class="flex">
+        <h1>Sato Takahiro</h1>
+      </div>
+      <p>-佐藤 嵩大-</p>
+    </header>
     <nav id="global-nav">
       <ul class="nav-menu">
         <li class="nav-link"><a href="#profile" title="ページ内リンクに遷移します">profile</a></li>
@@ -25,26 +30,30 @@
       <div class="about-box">
         <img src="./img/about-image.JPG" alt="佐藤嵩大">
         <div class="about-box-text">
-          <h3>はじめまして。訪問いただきありがとうございます。<br>佐藤嵩大です。</h3>
-          <ul>
-            <li>業種<span>：</span>フロントエンドエンジニア</li>
-            <li>生年月日<span>：</span>1998年11月2日（現在26歳）</li>
-            <li>出身大学<span>：</span>日本大学生物資源科学部</li>
-            <li><span>：</span></li>
-          </ul>
+          <h3>はじめまして。<br>訪問いただきありがとうございます。<br>佐藤嵩大です。</h3>
+          <div><b>学歴</b><ul><li>2017～2021&nbsp;日本大学&nbsp;生物資源科学部生物環境工学科</li></ul></div>
+          <div><b>職歴</b>
+            <ul>
+              <li>2021.4&nbsp;万星食品株式会社&nbsp;入社</li>
+              <li>2023.1&nbsp;株式会社LULL&nbsp;入社</li>
+              <li></li>
+            </ul>
+          </div>
         </div>
       </div>
       <h4>PROJECTS</h4>
       <div class="skill-box">
-        <div class="skill-group">
-          <img src="./img/HTML5_Logo_256.png" alt="HTML5">
-          <p>webサイト再構築プロジェクトにて、<br>HTML・CSSを経験</p>
-          <div class="project-list"><a href="" class="project-link" data-project="1">詳細</a></div>
+        <div class="skill-group project-list">
+          <a href="" class="project-link" data-project="1">
+            <img src="./img/HTML5_Logo_256.png" alt="HTML5">
+            <p>webサイト再構築プロジェクトにて、<br>コーディング（HTML・CSS）を経験</p>
+          </a>
         </div>
-        <div class="skill-group">
-          <img src="./img/pngtree-validation-icon-okay-png-image_10804380.png" alt="check">
-          <p>アプリゲームの検証作業にて、<br>QA部門を確立</p>
-          <div class="project-list"><a href="" class="project-link" data-project="2">詳細</a></div>
+        <div class="skill-group project-list">
+          <a href="" class="project-link" data-project="2">
+            <img src="./img/pngtree-validation-icon-okay-png-image_10804380.png" alt="check">
+            <p>アプリゲームの検証作業にて、<br>QA部門の検証業務を経験</p>
+          </a>
         </div>
         <div id="project-modal" class="modal">
           <div class="modal-content">
@@ -106,35 +115,35 @@
       <p class="attention-text">※今後、下記のようなサイトを作っていきたいと考えています</p>
       <div class="link-all">
         <div class="link-box">
-          <a href="">
+          <a href="" class="not-link">
             <img src="./img/hobby_sauna.jpg" alt="趣味宅訪問">
             <p class="img-on-text"><b>※制作中です</b></p>
             <p class="link-text">趣味宅訪問</p>
           </a>
         </div>
         <div class="link-box">
-          <a href="">
+          <a href="" class="not-link">
             <img src="./img/phoenix.png" alt="火の鳥特集サイト">
             <p class="img-on-text"><b>※制作中です</b></p>
             <p class="link-text">phoenix frameworkで<br>火の鳥特集サイト</p>
           </a>
         </div>
         <div class="link-box">
-          <a href="">
+          <a href="" class="not-link">
             <img src="./img/chatgpt.jpg" alt="ChatGPTで0から100まで作ってみた。">
             <p class="img-on-text"><b>※制作中です</b></p>
             <p class="link-text">ChatGPTで0から100まで<br>HP作ってみた。</p>
           </a>
         </div>
         <div class="link-box">
-          <a href="">
+          <a href="" class="not-link">
             <img src="./img/ikitai.png" alt="行きたいとこリスト">
             <p class="img-on-text"><b>※制作中です</b></p>
             <p class="link-text">行きたいリスト</p>
           </a>
         </div>
         <div class="link-box">
-          <a href="">
+          <a href="" class="not-link">
             <img src="./img/walking.jpg" alt="散策MAP">
             <p class="img-on-text"><b>※制作中です</b></p>
             <p class="link-text">散策MAP</p>
@@ -206,19 +215,5 @@
   <script src="./js/swiper.js"></script>
   <script src="./js/project-select.js"></script>
   <script src="./js/accordion.js"></script>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>
-    $(function () {
-        var menu = $('#global-nav'),
-          offset = menu.offset();
-        $(window).scroll(function () {
-          if ($(window).scrollTop() > offset.top) {
-            menu.addClass('fixed');
-          } else {
-            menu.removeClass('fixed');
-          }
-        });
-      });
-  </script> -->
  </body>
 </html>
