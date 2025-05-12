@@ -14,22 +14,17 @@ section{
 }
 
 header {
-  position: relative;
-  text-align: center;
-  background: linear-gradient(60deg, rgb(15, 74, 54) 0%, rgba(0, 172, 193, 1) 100%);
+  display: flex;
+  background-color: #000;
   color: white;
   text-align: center;
-  height: 25vh;
+  align-items: center;
+  height: 13vh;
   width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 .flex{
   display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
 }
 
 h2{
@@ -56,27 +51,10 @@ small{
 h1{
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  letter-spacing: 2px;
-  font-size: 48px;
-  line-height: 1.0;
+  font-size: 25px;
+  margin-left: 20px;
 }
 
-header>p{
-  font-size: 0.7rem;
-  padding: 0;
-  margin-top: -1em;
-  line-height: 1.0;
-}
-
-
-nav {
-  justify-self: center;
-  background-color: #aaaf8d;
-  /* display: flex; */
-  /* top: 0; */
-  /* left: 0; */
-  /* z-index: 999; */
-}
 
 /*
 nav.m_fixed {
@@ -85,60 +63,140 @@ nav.m_fixed {
   top: 0;
 } */
 
+nav{
+  margin: 0 30px 0 auto;
+}
 
 .nav-menu{
   display: flex;
-  flex-wrap: wrap;
   gap: 0.5rem;
   list-style: none;
-  background-color: #fff;
-  /* border-top: 1px solid #aaaf8d;
-  border-bottom: 1px solid #aaaf8d; */
 }
 
 .nav-link{
-  /* display: flex; */
-  /* flex-direction: column; */
-  width: 150px;
+  width: 100px;
   margin: 1px 0;
   text-align: center;
-  border: 1px solid #000;
-  border-radius: 10px;
-  background-color: #6c757d;
+  border: 2px solid #fff;
+  border-radius: 7px;
+  background-color: #000;
 }
 
 
 .nav-link a{
   display: block;
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 0.7rem;
   letter-spacing: 0.12em;
-  padding: 20px 0;
+  padding: 8px 0;
   text-decoration: none;
   color: #fff;
 }
 
 .nav-link a:hover{
-  color: #f18701;
-  background-color: #3c6e71;
-  border-radius: 10px;
+  color: #3c6e71;
+  background-color: #edede9;
+  border-radius: 6px;
+}
+
+/* ハンバーガーメニュー */
+#menu-btn{
+  display: none;
+  position: absolute;
+  right: 10px;
+  background: white;
+  padding: 1rem;
+  z-index: 100;
 }
 
 @media screen and (max-width: 412px){
-  nav{
-    width: 100%;
+
+  .menu-btn:checked~.menu{
+    transform: scale(1,1);
+    transform-origin: top;
+    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
   }
-  .nav-menu{
-    margin: 0;
-    padding: 0;
+  .menu-btn:checked~.menu a,
+  .menu-btn:checked~.menu li {
+    opacity: 1;
+    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.2s;
+  }
+
+  .menu-icon {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px 0 auto;
+    cursor: pointer;
+    padding: 24px 14px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  .navicon {
+    background: #ddd;
+    display: block;
+    height: 3px;
+    width: 26px;
+    margin-top: 7px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+  }
+
+  .menu-btn:checked+.menu-icon .navicon:nth-child(1) {
+    transform: translateY(10px) rotate(-45deg);
+  }
+
+  .menu-btn:checked+.menu-icon .navicon:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-btn:checked+.menu-icon .navicon:nth-child(3) {
+    transform: translateY(-10px) rotate(45deg);
+  }
+
+  .menu-btn:checked~#global-nav {
     display: block;
   }
-  .nav-link{
-    margin: 0;
+
+  #global-nav {
+    display: none;
+    position: absolute;
     width: 100%;
-    border-radius: 0px;
-    text-align: center;
+    top: 72px;
+    left: 0;
+    margin: 0 auto 0 0;
+    margin-left: 0;
+    padding-left: 0;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
   }
+
+  .nav-menu{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-link {
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 0;
+  }
+
+  .nav-link a {
+    display: block;
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    padding: 20px 0;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .nav-link a:hover{
+    border-radius: 0;
+  }
+
+
 }
 
 /* about(自己紹介) */
@@ -184,12 +242,13 @@ margin: 0 20px;
   border: 1px solid #000;
   margin: 10px;
   width: 35%;
+  height: 80px;
 }
 
 .skill-group img {
   width: 50px;
   height: 50px;
-  margin: 10px 0 0 15px;
+  margin-left: 15px;
 }
 
 .skill-group p{
@@ -269,6 +328,7 @@ margin: 0 20px;
 
 .project-link {
   display: flex;
+  align-items: center;
   width: 100%;
   font-size: 0.8rem;
   border-radius: 5px;
