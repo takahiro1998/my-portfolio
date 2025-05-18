@@ -202,13 +202,10 @@ nav{
 }
 
 /* about(自己紹介) */
-.profile-box, .plan-box, .hobby-box, .link-section, .faq-box{
+.profile-box, .plan-box, .link-section, .faq-box{
 margin: 0 20px;
 }
 
-.hobby-box{
-  margin-top: 80px;
-}
 .about-box{
   display: flex;
   margin: 10px 0;
@@ -242,7 +239,7 @@ margin: 0 20px;
 }
 
 .skill-box{
-  display: flex;;
+  display: flex;
 }
 
 .skill-group{
@@ -385,71 +382,61 @@ margin: 0 20px;
 /* hobby(趣味) */
 
  .swiper-container {
-   width: 1080px;
-   max-width: 1080px;
-   height: 200px;
+   width: 100%;
+   height: 240px;
    margin: 0 20px;
+   padding: 0 40px;
    position: relative;
    overflow: hidden;
+ }
+
+ .swiper-wrapper{
+  width: 100%;
  }
 
  .swiper-slide {
    display: flex;
    flex-direction: column;
    align-items: center;
- }
-
- .swiper-slide img {
-   width: 100%;
-   height: 160px;
-   margin-right: 110px;
-   border-radius: 2px;
- }
-
-
- .img-text {
-   margin-top: 8px;
-   font-size: 13px;
-   color: #333;
    text-align: center;
  }
 
-
- .swiper-button-prev,
- .swiper-button-next {
-   color: #000;
+ .swiper-slide img {
+   width: 80%;
+   height: 80%;
+   border-radius: 2px;
  }
 
- .hobby-text b{
-  font-size: 1.7rem;
-  padding-right: 2px;
+ .img-text {
+   font-size: 13px;
+   color: #333;
  }
-
 
  .hobby-text{
   display: flex;
-  overflow: hidden;
   justify-content: center;
-  padding-right: 30px;
  }
 
- .hobby-text span{
-  /* display: block; */
-  color: #aa8f7b;
-  transform: translate(0, 105%);
-  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+ @media screen and (max-width:750px) {
+  .swiper-slide{
+    padding-left: 0;
+  }
+  .swiper-slide img{
+    width: 100%;
+  }
+  .img-text{
+    font-size: 11px;
+  }
  }
 
- .hobby-text.-visible span {
-  transform: translate(0, 0);
-}
-
- .hobby-text span:nth-child(2){
-  transition-delay: 0.06s;
- }
-
- .hobby-text span:nth-child(3){
-  transition-delay: 0.12s;
+ @media screen and (max-width:420px) {
+  .swiper-container{
+    display: flex;
+    width: 100%;
+  }
+  .swiper-slide img{
+    width: 100%;
+  }
  }
 
  /* link */
