@@ -110,8 +110,7 @@ nav{
   z-index: 100;
 }
 
-@media screen and (max-width: 412px){
-
+@media screen and (max-width: 736px){
   .menu-btn:checked~.menu{
     transform: scale(1,1);
     transform-origin: top;
@@ -196,6 +195,10 @@ nav{
 
   .nav-link a:hover{
     border-radius: 0;
+  }
+
+  .nav-link a:active{
+    
   }
 
 

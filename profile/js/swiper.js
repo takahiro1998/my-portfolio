@@ -7,10 +7,10 @@ const swiper = new Swiper('.swiper-container', {
       slidesPerView: 3,
     },
     600: {
-      slidesPerView: 2, // タブレット以上では3枚
+      slidesPerView: 2,
     },
     0: {
-      slidesPerView: 1, // スマホでは1枚
+      slidesPerView: 1,
     }
   },
   navigation: {
