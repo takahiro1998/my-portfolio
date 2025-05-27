@@ -246,7 +246,6 @@ nav {
     margin: 0;
   }
 }
-/* project */
 .project-box {
   display: flex;
   justify-content: space-around;
@@ -587,5 +586,6 @@ form textarea {
   border: 1px solid #606c38;
   border-radius: 3px;
   color: #fff;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,5 @@
+$mainColor:#606c38;
+
 * {
   box-sizing: border-box;
 }
@@ -21,7 +23,7 @@ section {
 header {
   display: flex;
   /* position: fixed; */
-  background-color: #606c38;
+  background-color: $mainColor;
   color: white;
   text-align: center;
   align-items: center;
@@ -55,7 +57,7 @@ h1 {
 
 footer {
   display: flex;
-  background-color: #606c38;
+  background-color: $mainColor;
   color: #fff;
   ul{
     list-style: none;
@@ -79,7 +81,7 @@ nav {
   text-align: center;
   border: 2px solid #fff;
   border-radius: 7px;
-  background-color: #606c38;
+  background-color: $mainColor;
   a {
       display: block;
       font-size: 0.9rem;
@@ -615,8 +617,9 @@ form{
 
 .submit {
   padding: 5px 30px;
-  background-color: #606c38;
-  border: 1px solid #606c38;
+  background-color: $mainColor;
+  border: 1px solid $mainColor;
   border-radius: 3px;
   color: #fff;
+  cursor: pointer;
 }
