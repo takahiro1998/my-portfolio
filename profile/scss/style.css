@@ -246,7 +246,8 @@ nav {
     margin: 0;
   }
 }
-project .project-box {
+/* project */
+.project-box {
   display: flex;
   justify-content: space-around;
 }
