@@ -9,34 +9,31 @@
   <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 </head>
 <body>
-    <header>
-      <div class="flex">
-          <h1>Portfolio</h1>
-      </div>
-      <input type="checkbox" id="menu-btn" class="menu-btn">
-      <label for="menu-btn" class="menu-icon">
-        <span class="navicon"></span>
-        <span class="navicon"></span>
-        <span class="navicon"></span>
-      </label>
-      <nav id="global-nav">
-       <ul class="nav-menu">
-         <li class="nav-link"><a href="#profile" title="ページ内リンクに遷移します">profile</a></li>
-         <li class="nav-link"><a href="#plan" title="ページ内リンクに遷移します">plan</a></li>
-         <li class="nav-link"><a href="#hobby" title="ページ内リンクに遷移します">hobby</a></li>
-         <li class="nav-link"><a href="#link" title="ページ内リンクに遷移します">link</a></li>
-         <li class="nav-link"><a href="#faq" title="ページ内リンクに遷移します">faq</a></li>
-       </ul>
-      </nav>
-
-    </header>
+  <header>
+    <div class="flex"><h1>Portfolio</h1></div>
+    <input type="checkbox" id="menu-btn" class="menu-btn">
+    <label for="menu-btn" class="menu-icon">
+      <span class="navicon"></span>
+      <span class="navicon"></span>
+      <span class="navicon"></span>
+    </label>
+    <nav id="global-nav">
+      <ul class="nav-menu">
+       <li class="nav-link"><a href="#profile" title="ページ内リンクに遷移します">profile</a></li>
+       <li class="nav-link"><a href="#plan" title="ページ内リンクに遷移します">plan</a></li>
+       <li class="nav-link"><a href="#hobby" title="ページ内リンクに遷移します">hobby</a></li>
+        <li class="nav-link"><a href="#link" title="ページ内リンクに遷移します">link</a></li>
+        <li class="nav-link"><a href="#faq" title="ページ内リンクに遷移します">faq</a></li>
+      </ul>
+    </nav>
+  </header>
   <section>
     <h2 id="profile">Profile<small>-自己紹介-</small></h2>
-    <div class="profile-box">
+    <div class="profile-section">
+      <h3>はじめまして。<br>訪問いただきありがとうございます。<br>佐藤嵩大です。</h3>
       <div class="about-box">
-        <img src="./img/about-image.JPG" alt="佐藤嵩大">
+        <div class="profile-image"><img src="./img/about-image.JPG" alt="佐藤嵩大"></div>
         <div class="about-box-text">
-          <h3>はじめまして。<br>訪問いただきありがとうございます。<br>佐藤嵩大です。</h3>
           <div><b>学歴</b>
             <ul><li>2017～2021&nbsp;日本大学&nbsp;生物資源科学部生物環境工学科</li></ul>
           </div>
@@ -45,6 +42,18 @@
               <li>2021.4&nbsp;万星食品株式会社&nbsp;入社</li>
               <li>2023.1&nbsp;株式会社LULL&nbsp;入社</li>
             </ul>
+          </div>
+          <div>
+            <h4>SKILL</h4>
+            <div class="skill-list">
+              <div class="html-logo"><img src="./img/HTML5_Logo_256.png" alt=""></div>
+              <div class="css-logo"><img src="./img/css-3-logo.png" alt=""></div>
+              <div class="js-logo"><img src="./img/javascript.png" alt=""></div>
+              <div class="php-logo"><img src="./img/php-logo.webp" alt=""></div>
+              <div class="laravel-logo"><img src="./img/laravel.webp" alt=""></div>
+              <img src="" alt="">
+              <img src="" alt="">
+            </div>
           </div>
         </div>
       </div>
@@ -80,7 +89,7 @@
                 <p>webサイト再構築プロジェクトにて、<br>コーディング（HTML・CSS）を経験</p>
               </a>
             </div>
-            <div class="w-30 sp-w">
+            <div class="skill-qa-group w-30 sp-w">
               <div class="skill-group project-list">
                 <a href="" class="project-link" data-project="2">
                   <img src="./img/pngtree-validation-icon-okay-png-image_10804380.png" alt="check">
@@ -102,12 +111,12 @@
             </div>
           </div>
     <h2 id="plan">Plan<small>-キャリアプラン-</small></h2>
-    <div class="plan-box">
+    <div class="plan-section">
       <div class="plan-list">
         <h3>長期目標<span>&#0058;</span>義父の経営している不動産業をITの力で支援したい。</h3>
       </div>
       <div class="plan-list">
-        <h3>中期目標<span>&#0058;</span></h3>
+        <h3>中期目標<span>&#0058;</span>上流工程にも関わり、PMとしての経験もしたい</h3>
       </div>
       <div class="plan-list">
         <h3>短期目標<span>&#0058;</span>フロントエンドの領域を広げる</h3>
@@ -119,9 +128,9 @@
       <div class="link-all">
         <div class="link-box">
           <a href="" class="not-link">
-            <img src="./img/hobby_sauna.jpg" alt="趣味宅訪問">
+            <img src="./img/hobby_sauna.jpg" alt="サウナの記録">
             <p class="img-on-text"><b>※制作中です</b></p>
-            <p class="link-text">趣味宅訪問</p>
+            <p class="link-text">サウナの記録</p>
           </a>
         </div>
         <div class="link-box">
@@ -133,9 +142,9 @@
         </div>
         <div class="link-box">
           <a href="" class="not-link">
-            <img src="./img/chatgpt.jpg" alt="ChatGPTで0から100まで作ってみた。">
+            <img src="./img/OpenAI-Codex.webp" alt="OpenAI codex">
             <p class="img-on-text"><b>※制作中です</b></p>
-            <p class="link-text">ChatGPTで0から100まで<br>HP作ってみた。</p>
+            <p class="link-text">OpenAI codexでサイト作成</p>
           </a>
         </div>
         <div class="link-box">
@@ -154,71 +163,63 @@
         </div>
       </div>
     </div>
-    <h2 id="faq">FAQ<small>-気になる-</small></h2>
-    <div class="faq-box">
-      <div class="s_section">
-        <div class="accordion_area gutter">
-          <div class="accordion_one">
-            <div class="ac_header">
-              <div class="p-faq__headinner">
-                <p class="p-faq__q-txt">言語はどのように学びましたか</p>
-              </div>
-              <div class="i_box"></div>
-            </div>
-            <div class="ac_inner">
-              <div class="p-faq__bodyinner">
-                <p class="p-faq__a-txt">カリキュラム学習です。</p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion_one">
-            <div class="ac_header">
-              <div class="p-faq__headinner">
-                <p class="p-faq__q-txt">開発PJにおいて苦労したこと</p>
-              </div>
-              <div class="i_box"></div>
-            </div>
-            <div class="ac_inner">
-              <div class="p-faq__bodyinner">
-                <p class="p-faq__a-txt">分担するがゆえに各々の担当領域に関与しなくなること</p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion_one">
-            <div class="ac_header">
-              <div class="p-faq__headinner">
-                <p class="p-faq__q-txt">テキストテキストテキスト？</p>
-              </div>
-              <div class="i_box"></div>
-            </div>
-            <div class="ac_inner">
-              <div class="p-faq__bodyinner">
-                <p class="p-faq__a-txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion_one">
-            <div class="ac_header">
-              <div class="p-faq__headinner">
-                <p class="p-faq__q-txt">テキスト？</p>
-              </div>
-              <div class="i_box"></div>
-            </div>
-            <div class="ac_inner">
-              <div class="p-faq__bodyinner">
-                <p class="p-faq__a-txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div id="production" class="production-pop hidden">
+      <div class="pop-box">
+        <img src="" alt="">
+        <p>ただいま制作中です。</p>
+        <button id="production-close">閉じる</button>
       </div>
     </div>
+    <h2 id="faq">FAQ<small>-気になる-</small></h2>
+    <div class="faq-section">
+      <details>
+        <summary>IT業界を選んだわけ</summary>
+        <p>きっかけは新卒で入社した食品工場がシステム化されていない現状にもどかしさを感じたからです。<br>
+        ITを用いると何ができるのか知ろうと学び始めたところ、そんなところまでITなのかというITの幅広さに驚愕しました。<br>
+        ITについてを知ってくうちに、</p>
+      </details>
+      <details>
+        <summary>開発PJにおいて苦労したこと</summary>
+        <p>クライアント様と開発側で進めていたコーディング業務の一部タグの使用方法に差異が生まれたしまったことがあります。<br>
+           詳細にお伝えすると、リストタグの使い方に相違がありました。<br>
+           「このニュアンスの場合は、№リスト」など事前に使用把握を進めなかったために生じてしまった事象です。<br>
+           数百にも及びページのリニューアルのため、タグの認識違い一つでも修正は莫大な量になってしまいました。<br>
+           思い込みで定まっていない仕様については深く聞いていくべきだと痛感いたしました。</p>
+      </details>
+      <details>
+        <summary>現在学習中のものはありますか？</summary>
+        <p>JavaScriptを再学習中です。<br>学習終わり次第、React / Typescript を学ぶ予定です。<br>当サイトもJS部分もReactに改修予定でいます。</p>
+      </details>
+      <details>
+        <summary>最近気になるツールはありますか？</summary>
+        <p>「Figma Sites」に注目しています。<br>
+            Figmaで作成したデザインを直接ウェブサイトとして公開できる新機能とのことで、またコーディングが不要な点からもこれからのフロントエンドの新しい形として一度試してみたいと思っています。</p>
+      </details>
+    </div>
+    <h2>Yell<small>-応援コメント-</small></h2>
+    <div class="yell-section">
+      <p class="marker">よければ応援コメントください</p>
+      <form action="./admin/admin.html" method="post">
+          <label for="name"><b>name</b></label><br>
+          <input type="text" placeholder="匿名OK"><br>
+          <label for="text"><b>yell</b></label><br>
+          <textarea name="" id="" placeholder="応援コメントよろしくお願いいたします。"></textarea>
+          <div><input type="submit" class="submit"></div>
+      </form>
+    </div>
   </section>
+  <footer>
+    <ul>
+      <li>連絡先：080-xxxx-xxxxx</li>
+      <li>mail：xxx@xxx.com</li>
+    </ul>
+  </footer>
   <script src="./js/click.js"></script>
   <script src="./js/swiper-bundle.min.js"></script>
   <script src="./js/swiper.js"></script>
   <script src="./js/project-select.js"></script>
   <script src="./js/accordion.js"></script>
   <script src="./js/slide.js"></script>
+  <script src="./js/marker.js"></script>
  </body>
 </html>

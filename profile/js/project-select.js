@@ -31,8 +31,15 @@ const projectData = {
       }
     });
 
+    // 関連サイトのリンク遷移防止POP表示・非表示
     document.querySelectorAll('.not-link').forEach(link => {
       link.addEventListener('click', function (e) {
-        alert('このページは制作中です。');
+        e.preventDefault();
+        document.getElementById('production').classList.remove('hidden');
       });
     });
+
+    document.getElementById('production-close').addEventListener('click', function (e) {
+        e.preventDefault();
+        document.getElementById('production').classList.add('hidden');
+    })
