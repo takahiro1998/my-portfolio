@@ -497,6 +497,9 @@ nav {
   -webkit-animation: fadeIn 0.3s ease;
           animation: fadeIn 0.3s ease;
 }
+.pop-box img {
+  width: 150px;
+}
 
 @media screen and (max-width: 736px) {
   .link-all {
