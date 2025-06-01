@@ -15,11 +15,16 @@ $time = date("Y-m-d H:i:s");
 </head>
 <body>
   <header><div class="flex"><h1>管理ページ</h1></div></header>
-  <h2>コメント一覧</h2>
-  <ul>
-    <li><?php echo $name; ?></li>
-    <li><?php echo $comment; ?></li>
-  </ul>
+  <section>
+    <h2>コメント一覧</h2>
+    <div class="comment_list">
+      <div class="comment_list_title">
+        <p class="username"><b><?php echo $name; ?></b><span><?php echo $time;?></span></p>
+        <div class="delete"><button>削除</button></div>
+      </div>
+      <p class="yell_comment"><?php echo $comment; ?></p>
+    </div>
+  </section>
 
 </body>
 </html>

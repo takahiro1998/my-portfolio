@@ -1,3 +1,9 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   display: flex;
   background-color: #606c38;
@@ -9,7 +15,45 @@ header {
   z-index: 100;
 }
 
-h2 {
+section {
+  margin: 0 20px 100px 20px;
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 29px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+h2{
   font-size: 1.3rem;
+}
+
+.comment_list{
+  border-bottom: 1px solid #606c38;
+}
+
+.comment_list_title{
+  display: flex;
+}
+
+.username>span{
+  font-size: 0.8rem;
+  color: #495057;
+  margin-left: 10px;
+}
+
+.yell_comment{
+  margin-left: 20px;
+}
+
+.delete{
+  margin: auto 20px;
 }
 /*# sourceMappingURL=admin.css.map */
