@@ -44,3 +44,10 @@ const projectData = {
         e.preventDefault();
         document.getElementById('production').classList.add('hidden');
     })
+
+//  コメント送信後のページ遷移防止+POP表示
+document.getElementById('commentForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  this.reset();
+  alert('コメントありがとう！');
+});
