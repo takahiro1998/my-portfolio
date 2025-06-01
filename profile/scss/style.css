@@ -232,6 +232,11 @@ nav {
   width: 50px;
 }
 
+.github-logo img {
+  width: 70px;
+  height: 43px;
+}
+
 @media screen and (max-width: 736px) {
   .about-box {
     display: block;

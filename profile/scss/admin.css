@@ -1,0 +1,11 @@
+header {
+  display: flex;
+  background-color: #606c38;
+  color: white;
+  text-align: center;
+  align-items: center;
+  height: 13vh;
+  width: 100%;
+  z-index: 100;
+}
+/*# sourceMappingURL=admin.css.map */

@@ -247,6 +247,10 @@ nav {
 .laravel-logo img {
   width: 50px;
 }
+.github-logo img{
+  width: 70px;
+  height: 43px;
+}
 
 @media screen and (max-width: 736px) {
   .about-box {
@@ -446,7 +450,7 @@ nav {
 .plan-list {
   border: 1px solid #edede9;
   border-radius: 10px;
-  background-color: #edede9;
+  background-color: $subColor;
   padding: 0 30px;
   margin: 30px 0;
 }
