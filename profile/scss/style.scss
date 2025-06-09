@@ -200,6 +200,43 @@ nav {
   margin: 0 20px;
 }
 
+
+.profile-plate{
+  p{
+    display: inline-block;
+    background-color: $mainColor;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 5px 24px;
+    border: 2px solid #000;
+    margin: 0 auto;
+  }
+}
+
+.profile-career{
+  margin-top: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid #000;
+  margin-top: 10px;
+  width: 100%;
+  th,
+  td {
+    border: 2px solid #000;
+  }
+  th {
+    width: 25%;
+    color: #fff;
+    padding: 10px 0;
+    background-color: $mainColor;
+  }
+  td{
+    padding-left: 20px;
+  }
+}
+
 .about-box {
   display: flex;
   gap: 30px;
@@ -216,14 +253,16 @@ nav {
   width: 50%;
   img {
       width: 100%;
-      /* height: 50%; */
       border-radius: 50%;
       margin-left: 100px;
   }
 }
 .skill-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
+  width: 80%;
+  align-items: center;
 }
 
 .html-logo img {
