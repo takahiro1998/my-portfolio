@@ -9,17 +9,17 @@ menuLinks.forEach(link => {
 });
 
 // 関連サイトのリンク遷移防止POP表示・非表示
-    document.querySelectorAll('.not-link').forEach(link => {
-      link.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.getElementById('production').classList.remove('hidden');
-      });
-    });
+document.querySelectorAll('.not-link').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.getElementById('production').classList.remove('hidden');
+  })
+});
 
-    document.getElementById('production-close').addEventListener('click', function (e) {
-        e.preventDefault();
-        document.getElementById('production').classList.add('hidden');
-    })
+document.getElementById('production-close').addEventListener('click', function (e) {
+  e.preventDefault();
+  document.getElementById('production').classList.add('hidden');
+});
 
 //  コメント送信後のページ遷移防止+POP表示
 document.getElementById('commentForm').addEventListener('submit', function (e) {
