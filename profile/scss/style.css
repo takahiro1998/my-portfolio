@@ -18,7 +18,6 @@ section {
 
 header {
   display: flex;
-  /* position: fixed; */
   background-color: #606c38;
   color: white;
   text-align: center;
@@ -98,6 +97,18 @@ nav {
   background: white;
   padding: 1rem;
   z-index: 100;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.flex {
+  display: flex;
 }
 
 @media screen and (max-width: 736px) {
@@ -255,6 +266,39 @@ table td {
   border: 1px solid #000;
 }
 
+.v_line_left {
+  border-left: 2px solid #606c38;
+  padding-left: 10px;
+}
+.v_line_left div {
+  position: relative;
+}
+.v_line_left div span {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: solid 1px #606c38;
+  position: absolute;
+  top: 4%;
+  left: -14.2px;
+  transform: translateY(-50%);
+  background: #606c38;
+}
+
+.career_project {
+  display: flex;
+  gap: 50px;
+}
+.career_project img {
+  width: 420px;
+}
+
+@media screen and (max-width: 736px) {
+  .career_project {
+    display: block;
+  }
+}
 .skill-list {
   display: flex;
   flex-wrap: wrap;
@@ -320,7 +364,6 @@ table td {
   height: 80px;
 }
 .project-group img {
-  width: 14%;
   height: 50px;
   margin-left: 15px;
 }
