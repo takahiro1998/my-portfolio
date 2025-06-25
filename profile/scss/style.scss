@@ -112,6 +112,9 @@ nav {
 .ml-20 {
   margin-left: 20px;
 }
+.ms-20{
+  margin: 0 20px;
+}
 .flex{
   display: flex;
 }
@@ -310,8 +313,19 @@ table {
 .career_project{
   display: flex;
   gap: 50px;
-  img{
+  &_img>img{
     width: 420px;
+  }
+  &_charge{
+    gap: 10px;
+    img{
+      width: 20px;
+      height: 20px;
+      margin: auto 0;
+    }
+    p{
+      margin: 0;
+    }
   }
 }
 @media screen and (max-width: 736px) {

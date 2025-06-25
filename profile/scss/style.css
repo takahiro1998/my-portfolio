@@ -107,6 +107,10 @@ nav {
   margin-left: 20px;
 }
 
+.ms-20 {
+  margin: 0 20px;
+}
+
 .flex {
   display: flex;
 }
@@ -290,8 +294,19 @@ table td {
   display: flex;
   gap: 50px;
 }
-.career_project img {
+.career_project_img > img {
   width: 420px;
+}
+.career_project_charge {
+  gap: 10px;
+}
+.career_project_charge img {
+  width: 20px;
+  height: 20px;
+  margin: auto 0;
+}
+.career_project_charge p {
+  margin: 0;
 }
 
 @media screen and (max-width: 736px) {
